@@ -1,0 +1,74 @@
+.backArrow {
+    padding-left: 10%;
+    padding-top: 30px;
+    display: block;
+}
+.back:hover {
+    cursor: pointer;
+}
+.moodHeader {
+    color: white;
+    font-size: 52px;
+    padding-left: 10%;
+    font-weight: 100;
+    padding-right: 10%;
+}
+.moodContainer {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    .moodOption {
+        outline: none;
+        border: none;
+        width: 135px;
+        height: 135px;
+        background-color: white;
+        border-radius: 20px;
+        img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            height: 55px;
+            margin-top: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        .good {
+            color: rgb(50, 199, 45);
+        }
+        .tired {
+            color: #2e2e2e;
+        }
+        .warm {
+            color: rgb(255, 38, 0);
+        }
+        .cold {
+            color: rgb(124, 173, 214);
+        }
+    }
+    .moodOption:hover {
+        cursor: pointer;
+    }
+    .optionLeft {
+        float: left;
+    }
+    .optionRight {
+        float: right;
+    }
+    .optionBottom {
+        margin-top: 20px;
+    }
+}
+.moodSelect{
+    color: white;
+    display: none;
+}
+.moodSelectBtn{
+    color: white;
+    display: none;
+    background-color: #284fff;
+    border-radius: 20px;
+}

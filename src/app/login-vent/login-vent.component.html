@@ -1,0 +1,19 @@
+<div class="inputContainer">
+    <p class="inputTitle">Vent number:</p>
+    <div id="container">
+        <div class="codeboxContainer">
+            <input type="text" maxlength="1" class="Codebox"/>
+        </div>
+        <div class="codeboxContainer">
+            <input type="text" maxlength="1" class="Codebox"/>
+        </div>
+        <div class="codeboxContainer">
+            <input type="text" maxlength="1" class="Codebox"/>
+        </div>
+        <div class="codeboxContainer">
+            <input type="text" maxlength="1" [formControl]="searchControl" class="Codebox"/>
+        </div>
+    </div>
+    <button *ngIf="success" class="button" mat-raised-button routerLink="../Main">CONNECT</button>
+    <button *ngIf="success==false" class="buttonFalse" mat-raised-button>CONNECT</button>
+</div>

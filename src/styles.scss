@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+
+@import '~@angular/material/theming';
+@include mat-core();
+$vent2u-semester-project-primary: mat-palette($mat-indigo);
+$vent2u-semester-project-accent: mat-palette($mat-pink, A200, A100, A400);
+$vent2u-semester-project-warn: mat-palette($mat-red);
+$vent2u-semester-project-theme: mat-light-theme((
+  color: (
+    primary: $vent2u-semester-project-primary,
+    accent: $vent2u-semester-project-accent,
+    warn: $vent2u-semester-project-warn,
+  )
+));
+@include angular-material-theme($vent2u-semester-project-theme);
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  max-width: 450px;
+  width: 100vw;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:	#24385c;
+}

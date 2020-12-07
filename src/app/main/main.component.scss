@@ -1,0 +1,127 @@
+a {
+    width: 80%;
+    max-width: 360px;
+    border-radius: 20px;
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    background-color: #24385c;
+    line-height: 1.2 !important;
+    text-align: left;
+    p {
+        font-size: 16px;
+    }
+}
+.moodA {
+    height: 150px;
+}
+.moodBox {
+    background-color: rgb(40, 79, 255);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 40px;
+    display: block;
+    .globalContainer {
+        height: 100px;
+    }
+    .moodHeader {
+        color: white;
+        width: 42%;
+        float: left;
+        font-size: 23px;
+        padding-left: 8%;
+    }
+    .moodImgContainer{
+        width: 50%;
+        float: left;
+        .moodImg {
+            margin-top: 20px;
+            height: 70px;
+            width: auto;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .moodParagraphContainer {
+        width: 100%;
+        color: white;
+        .moodParagraph {
+            padding-left: 8%;
+        }
+    }
+}
+.informationBox {
+    background-color: rgb(41, 44, 53);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: block;
+    .informationHeader {
+        font-size: 23px;
+        color: white;
+        padding-left: 8%;
+        padding-top: 15px;
+    }
+    .right {
+        float: right;
+        color: white;
+        width: 42%;
+        padding-right: 8%;
+        text-align: right;
+    }
+    .left {
+        float: left;
+        color: white;
+        width: 42%;
+        padding-left: 8%;
+    }
+    .connected {
+        padding-left: 8%;
+        margin-top: 10px;
+        float: left;
+    }
+}
+.quizBox {
+    background-color: rgb(16, 255, 243);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    height: 140px;
+    border-radius: 20px;
+    margin-top: 20px;
+    display: block;
+    .globalContainer {
+        height: 75px;
+    }
+    .quizHeader {
+        color: white;
+        width: 42%;
+        float: left;
+        font-size: 23px;
+        padding-left: 8%;
+    }
+    .quizImgContainer {
+        width: 50%;
+        float: left;
+        .quizImg {
+            margin-top: 20px;
+            width: 70px;
+            height: auto;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .quizParagraph {
+        padding-left: 8%;
+        color: white;
+    }
+}
