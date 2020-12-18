@@ -1,9 +1,32 @@
+@import '../../styles.scss';
+.backgroundGreen {
+    background-color: $green !important;
+}
+.backgroundRed {
+    background-color: $red !important;
+}
 .globalContainer {
     background-color: #2DC4BB;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     color: white;
-    .backArrow {
+    -webkit-transition: background-color 1000ms linear;
+    -ms-transition: background-color 1000ms linear;
+    transition: background-color 1000ms linear;
+    .toMain {
+        bottom: 30px;
+        position: absolute;
+        color: #292c35;
+        background-color: white;
+        border-radius: 15px;
+        width: 90px;
+        font-size: 20px;
+        border: none;
+    }
+    .rgButton {
+        color: #292c35;
+        font-size: 20px;
+        border-radius: 15px;
     }
     .back:hover {
         cursor: pointer;
@@ -28,16 +51,7 @@
             width: 160px;
             outline: none;
         }
-        .quizPart2 {
-            display: none;
-        }
-        .quizPart3 {
-            display: none;
-        }
-        .quizPart4 {
-            display: none;
-        }
-        .quizPart5 {
+        .red, .green, .quizPart2, .quizPart3, .quizPart4, .quizPart5 {
             display: none;
         }
         .answerContainer {

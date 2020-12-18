@@ -7,13 +7,17 @@ import { LoginRoomComponent } from './login-room/login-room.component';
 import { LoginVentComponent } from './login-vent/login-vent.component';
 import { MainComponent } from './main/main.component';
 import { MoodComponent } from './mood/mood.component';
-import { InformationComponent } from './information/information.component';
 import { ChangeVentComponent } from './change-vent/change-vent.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { QuizComponent } from './quiz/quiz.component';
+import { HttpClientModule } from '@angular/common/http';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+import { Globals } from './globals'
+
 
 @NgModule({
   declarations: [
@@ -22,7 +26,6 @@ import { QuizComponent } from './quiz/quiz.component';
     LoginVentComponent,
     MainComponent,
     MoodComponent,
-    InformationComponent,
     ChangeVentComponent,
     QuizComponent
   ],
@@ -33,9 +36,11 @@ import { QuizComponent } from './quiz/quiz.component';
     MatFormFieldModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    MatSlideToggleModule
   ],
-  providers: [],
+  providers: [Globals],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

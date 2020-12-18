@@ -1,20 +1,14 @@
-.backArrow {
-    padding-left: 10%;
-    padding-top: 30px;
-    display: block;
-}
-.back:hover {
-    cursor: pointer;
-}
+@import '../../styles.scss';
 .moodHeader {
     color: white;
     font-size: 52px;
-    padding-left: 10%;
     font-weight: 100;
-    padding-right: 10%;
+    margin-top: 0px;
+    padding-top: 30px;
 }
 .moodContainer {
     width: 80%;
+    height: 100%;
     margin-right: auto;
     margin-left: auto;
     .moodOption {
@@ -37,16 +31,16 @@
             margin-top: 15px;
         }
         .good {
-            color: rgb(50, 199, 45);
+            color: $green;
         }
         .tired {
-            color: #2e2e2e;
+            color: $grey;
         }
         .warm {
-            color: rgb(255, 38, 0);
+            color:$red;
         }
         .cold {
-            color: rgb(124, 173, 214);
+            color: $icyBlue;
         }
     }
     .moodOption:hover {
@@ -65,10 +59,54 @@
 .moodSelect{
     color: white;
     display: none;
+    position: relative;
+    height: 100%;
+    h1 {
+        font-size: 56px;
+        margin-top: 0px;
+        padding-top: 40px;
+    }
+    h2 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    h3 {
+        text-align: center;
+    }
+    .h3Warm {
+        color: $red;
+    }
+    .h3Cold {
+        color: $icyBlue;
+    }
+    .h3Tired {
+        color: $grey;
+    }
+    .h3Good {
+        color: $green;
+    }
+    .selectImg {
+        width: 150px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 20px;
+    }
+    .continue {
+        margin-right: auto;
+        margin-left: auto;
+        left: 0;
+        right: 0;
+    }
 }
 .moodSelectBtn{
-    color: white;
-    display: none;
-    background-color: #284fff;
+    color: #292c35;
+    background-color: white;
     border-radius: 20px;
+    position: absolute;
+    bottom: 30px;
+}
+.back {
+    margin-top: 50px;
+    left: 10%;
 }

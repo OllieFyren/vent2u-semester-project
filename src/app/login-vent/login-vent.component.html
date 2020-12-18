@@ -2,13 +2,13 @@
     <p class="inputTitle">Vent number:</p>
     <div id="container">
         <div class="codeboxContainer">
-            <input type="text" maxlength="1" class="Codebox"/>
+            <input type="text" maxlength="1" class="Codebox" [(ngModel)]="digit1"/>
         </div>
         <div class="codeboxContainer">
-            <input type="text" maxlength="1" class="Codebox"/>
+            <input type="text" maxlength="1" class="Codebox" [(ngModel)]="digit2"/>
         </div>
         <div class="codeboxContainer">
-            <input type="text" maxlength="1" class="Codebox"/>
+            <input type="text" maxlength="1" class="Codebox" [(ngModel)]="digit3"/>
         </div>
         <div class="codeboxContainer">
             <input type="text" maxlength="1" [formControl]="searchControl" class="Codebox"/>
@@ -16,4 +16,5 @@
     </div>
     <button *ngIf="success" class="button" mat-raised-button routerLink="../Main">CONNECT</button>
     <button *ngIf="success==false" class="buttonFalse" mat-raised-button>CONNECT</button>
+    <p class="signifier">ATTENTION: You can find the vent number on the ventilation unit.</p>
 </div>

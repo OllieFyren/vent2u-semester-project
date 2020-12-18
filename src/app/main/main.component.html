@@ -1,36 +1,33 @@
-<a class="moodA" mat-raised-button>
-<div class="moodBox" mat-raised-button routerLink="../Mood">
-    <div class="globalContainer">
-    <h1 class="moodHeader">How are <br>you <br>feeling?</h1>
-    <div class="moodImgContainer">
-        <img class="moodImg" src="assets/good.png">
-    </div>
-    </div>
+<mat-slide-toggle class="toggleMode"></mat-slide-toggle>
+<div class="moodBox" mat-raised-button>
+    <h1 class="moodHeader">How are you feeling?</h1>
     <div class="moodParagraphContainer">
-        <p class="moodParagraph">Change how you feel right here!</p>
+        <p class="moodParagraph">Change your mood here so we can help you find the perfect climate</p>
     </div>
+    <div class="moodIconContainer">
+        <img class="moodIcon" src="../../assets/goodGreen.png" *ngIf="disMood === 'good'">
+        <img class="moodIcon" src="../../assets/tired.png" *ngIf="disMood === 'tired'">
+        <img class="moodIcon" src="../../assets/warm.png" *ngIf="disMood === 'warm'">
+        <img class="moodIcon" src="../../assets/cold.png" *ngIf="disMood === 'cold'">
+    </div>
+    <div class="navButtonContainer"><button class="moodButton navButton" mat-raised-button routerLink="../Mood">Change mood</button></div>
 </div>
-</a>
-<a class="informationA" mat-raised-button>
-<div class="informationBox" mat-raised-button routerLink="../Information">
-    <h1 class="informationHeader">Current<br> Information</h1>
+<div class="informationBox" mat-raised-button>
+    <h1 class="informationHeader">Current Information</h1>
     <p class="left">Connected to:</p>
-    <p class="right">Vent 1</p>
-    <p class="left">Temperature</p>
-    <p class="right">21°C</p>
-    <p class="left">Humidity</p>
-    <p class="right">55%</p>
+    <p class="right">Vent {{disVent}}</p>
+    <p class="left">Temperature:</p>
+    <p class="right">{{disTemp}}°C</p>
+    <p class="left">Humidity:</p>
+    <p class="right">{{disHum}}</p>
+    <p class="left">Fan speed:</p>
+    <p class="right">{{disFan}}%</p>
     <img class="connected" src="assets/connected.png">
+    <div class="navButtonContainer"><button (click)="disconnect(connection_id);" class="logoutButton navButton" mat-raised-button routerLink="../">Logout</button></div>
 </div>
-</a>
-<a class="quizA" mat-raised-button>
 <div class="quizBox" routerLink="../Quiz">
     <div class="globalContainer">
-    <h1 class="quizHeader">Take a quiz!</h1>
-    <div class="quizImgContainer">
-        <img class="quizImg" src="assets/quiz.png">
+    <h1 class="quizHeader">Learn more about indoor climate!</h1>
     </div>
-    </div>
-    <p class="quizParagraph">Learn more about indoor climate.</p>
+    <div class="navButtonContainer"><button class="quizButton navButton" mat-raised-button routerLink="../Quiz">Take a quiz!</button></div>
 </div>
-</a>

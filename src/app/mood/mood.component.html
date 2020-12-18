@@ -1,22 +1,49 @@
-<img src="assets/back.png" class="backArrow" routerLink="../Main">
-<h1 class="moodHeader">How are <br>you feeling <br>right now?</h1>
+<mat-slide-toggle class="toggleMode toggle2"></mat-slide-toggle>
 <div class="moodContainer">
-<button class="moodOption optionLeft" mat-raised-button>
+    <h1 class="moodHeader">How are <br>you feeling <br>right now?</h1>
+<button (click)="moodNew('good');" class="moodOption optionLeft optionGood" mat-raised-button>
     <img class="moodImg" src="assets/goodGreen.png">
     <p class="moodParagraph good">Good</p>
 </button>
-<button class="moodOption optionRight" mat-raised-button>
+<button (click)="moodNew('tired');" class="moodOption optionRight optionTired" mat-raised-button>
     <img class="moodImg" src="assets/tired.png">
     <p class="moodParagraph tired">Tired</p>
 </button>
-<button class="moodOption optionLeft optionBottom" mat-raised-button>
+<button (click)="moodNew('warm')" class="moodOption optionLeft optionBottom optionWarm" mat-raised-button>
     <img class="moodImg" src="assets/warm.png">
     <p class="moodParagraph warm">Warm</p>
 </button>
-<button class="moodOption optionRight optionBottom" mat-raised-button>
+<button (click)="moodNew('cold')" class="moodOption optionRight optionBottom optionCold" mat-raised-button>
     <img class="moodImg" src="assets/cold.png">
     <p class="moodParagraph cold">Cold</p>
 </button>
-<h2 class="moodSelect">Your choice has been registered.</h2>
+<div class="moodSelectWarm moodSelect">
+    <h1>Thank you!</h1>
+    <h2>We will increase the airflow to cool you down.</h2>
+    <img class="selectImg" src="assets/warm.png">
+    <h3 class="h3Warm">Warm</h3>
+    <button class="moodSelectBtn continue" mat-raised-button routerLink="../Main">Continue</button>
+</div>
+<div class="moodSelectGood moodSelect">
+    <h1>Thank you!</h1>
+    <h2>We won't make any changes to the ventilation.</h2>
+    <img class="selectImg" src="assets/goodGreen.png">
+    <h3 class="h3Good">Good</h3>
+    <button class="moodSelectBtn continue" mat-raised-button routerLink="../Main">Continue</button>
+</div>
+<div class="moodSelectCold moodSelect">
+    <h1>Thank you!</h1>
+    <h2>We will decrease the airflow to warm you up.</h2>
+    <img class="selectImg" src="assets/cold.png">
+    <h3 class="h3Cold">Cold</h3>
+    <button class="moodSelectBtn continue" mat-raised-button routerLink="../Main">Continue</button>
+</div>
+<div class="moodSelectTired moodSelect">
+    <h1>Thank you!</h1>
+    <h2>We will pump some fresh air into the room to wake you up.</h2>
+    <img class="selectImg" src="assets/tired.png">
+    <h3 class="h3Tired">Tired</h3>
+    <button class="moodSelectBtn continue" mat-raised-button routerLink="../Main">Continue</button>
+</div>
 <button class="back moodSelectBtn" mat-raised-button routerLink="../Main">Go back to Main</button>
 </div>

@@ -1,75 +1,80 @@
-a {
-    width: 80%;
-    max-width: 360px;
-    border-radius: 20px;
-    display:block;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0;
-    background-color: #24385c;
-    line-height: 1.2 !important;
-    text-align: left;
-    p {
-        font-size: 16px;
-    }
+@import '../../styles.scss';
+h1 {
+    font-weight: 400;
+    font-size: 26px;
+    color: white;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 15px;
+    margin-bottom: 10px;
 }
-.moodA {
-    height: 150px;
+p {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.moodIcon {
+    height: 35px;
+    width: auto;
+    padding-left: 16%;
+    margin-top: 20px;
 }
 .moodBox {
-    background-color: rgb(40, 79, 255);
-    width: 100%;
+    background-color: $lightBlue;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    height: 150px;
+    height: 170px;
     border-radius: 20px;
     margin-top: 40px;
     display: block;
-    .globalContainer {
-        height: 100px;
-    }
-    .moodHeader {
-        color: white;
-        width: 42%;
-        float: left;
-        font-size: 23px;
-        padding-left: 8%;
-    }
-    .moodImgContainer{
-        width: 50%;
-        float: left;
-        .moodImg {
-            margin-top: 20px;
-            height: 70px;
-            width: auto;
-            display: block;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
     .moodParagraphContainer {
-        width: 100%;
         color: white;
+        width: 100%;
         .moodParagraph {
             padding-left: 8%;
+            padding-right: 8%;
         }
+    }
+    .moodIconContainer {
+        width: 50%;
+        float: left;
+    }
+}
+.navButtonContainer {
+    width: 42%;
+    float: right;
+    padding-right: 8%;
+    .moodButton, .quizButton, .logoutButton {
+        float: right;
+        width: 90%;
+        height: 35px;
+        border-radius: 10px;
+        border: none;
+        color: white;
+    }
+    .moodButton {
+        margin-top: 20px;
+    }
+    .quizButton {
+        margin-top: 15px;
+    }
+    .moodButton, .quizButton {
+        background-color: $greyBlue;
+    }
+    .logoutButton {
+        background-color: $lightBlue;
+        margin-top: 10px;
     }
 }
 .informationBox {
-    background-color: rgb(41, 44, 53);
-    width: 100%;
+    background-color: $greyBlue;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
-    height: 280px;
+    height: 255px;
     border-radius: 20px;
     margin-top: 20px;
     display: block;
-    .informationHeader {
-        font-size: 23px;
-        color: white;
-        padding-left: 8%;
-        padding-top: 15px;
-    }
     .right {
         float: right;
         color: white;
@@ -85,13 +90,13 @@ a {
     }
     .connected {
         padding-left: 8%;
-        margin-top: 10px;
+        margin-top: 19px;
         float: left;
     }
 }
 .quizBox {
-    background-color: rgb(16, 255, 243);
-    width: 100%;
+    background-color: $teal;
+    width: 80%;
     margin-right: auto;
     margin-left: auto;
     height: 140px;
@@ -100,13 +105,6 @@ a {
     display: block;
     .globalContainer {
         height: 75px;
-    }
-    .quizHeader {
-        color: white;
-        width: 42%;
-        float: left;
-        font-size: 23px;
-        padding-left: 8%;
     }
     .quizImgContainer {
         width: 50%;

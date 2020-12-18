@@ -1,13 +1,16 @@
-<img class="logo" src="assets/Logo-white-new.png">
+<img class="logo whiteLogo" src="assets/Logo-white-new.png">
+<img class="logo blackLogo" src="assets/Logo-black-new.png">
+
 <div class="inputContainer">
     <p class="inputTitle">Room name:</p>
     <input class="input" [formControl]="searchControl" placeholder="Zea1">
     <button *ngIf="success" class="button" mat-raised-button routerLink="Vent">LOG IN</button>
     <button *ngIf="success==false" class="buttonFalse" mat-raised-button>LOG IN</button>
+    <p class="signifier">ATTENTION: You can find the room name on the ventilation unit.</p>
 </div>
 <div class="weatherContainer">
     <div class="weatherSubContainer">
-        <p class="weatherTemp">14°</p>
-        <img class="weatherImg" src="assets/weather.png">
+        <p class="weatherTemp">{{weatherDetails.currentTemperature}}°</p>
+        <img class="weatherImg" src="http://openweathermap.org/img/wn/{{weatherDetails.icon}}@2x.png">
     </div>
 </div>

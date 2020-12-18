@@ -1,8 +1,7 @@
-
 @import '~@angular/material/theming';
 @include mat-core();
 $vent2u-semester-project-primary: mat-palette($mat-indigo);
-$vent2u-semester-project-accent: mat-palette($mat-pink, A200, A100, A400);
+$vent2u-semester-project-accent: mat-palette($mat-blue, A200, A100, A400);
 $vent2u-semester-project-warn: mat-palette($mat-red);
 $vent2u-semester-project-theme: mat-light-theme((
   color: (
@@ -20,5 +19,49 @@ body {
   width: 100vw;
   margin-right: auto;
   margin-left: auto;
-  background-color:	#24385c;
+  background-color:	#0F213A;
+  font-family: 'Lato', sans-serif;
 }
+.toggleMode {
+  position: absolute;
+  right: 8%;
+  top: 10px;
+}
+.lightMode {
+  background-image: linear-gradient(white, #5197FF);
+  input {
+    background-color: white !important;
+  }
+  .blackLogo {
+    display: block !important;
+  }
+  .whiteLogo {
+    display: none !important;
+  }
+  .signifier {
+    color: #24344C !important;
+  }
+  .inputTitle {
+    color: #24344C !important;
+  }
+  .weatherTemp {
+    color: #24344C !important;
+  }
+  .moodContainer{
+    .moodHeader {
+      color: #24344C !important;
+    }
+  }
+  .Codebox {
+    border: 3px solid white !important;
+    color: #24344C !important;
+  }
+}
+$lightBlue: #225bf9;
+$greyBlue: #24344c;
+$darkBlue: #10223c;
+$teal: #2dc4bb;
+$red: #d84444;
+$icyBlue: #7dbdec;
+$grey: #4a5678;
+$green: #4fce54;
