@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-const baseUrl = 'https://vent2u-node-server.herokuapp.com/api/vent';
-const connectionUrl = 'https://vent2u-node-server.herokuapp.com/api/vent/find/connections';
-const moodUrl = 'https://vent2u-node-server.herokuapp.com/api/vent/mood/';
+const baseUrl = 'http://localhost:8080/api/vent';
+const connectionUrl = 'http://localhost:8080/api/vent/find/connections';
+const moodUrl = 'http://localhost:8080/api/vent/mood/';
 
 @Injectable({
   providedIn: 'root'
